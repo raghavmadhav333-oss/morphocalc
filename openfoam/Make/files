@@ -1,0 +1,4 @@
+morphoCalcLES.C
+morphoCalcCompressibleLES.C
+
+LIB = $(FOAM_USER_LIBBIN)/libmorphoCalcLES

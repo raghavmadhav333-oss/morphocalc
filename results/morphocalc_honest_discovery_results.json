@@ -1,0 +1,116 @@
+{
+  "domain1_fluid": {
+    "smag_train_mse": 1.4053382177467244,
+    "ours_train_mse": 0.5077347237883015,
+    "smag_zeroshot_mse": 0.2775417795019219,
+    "ours_zeroshot_mse": 0.07659967325667065,
+    "zeroshot_improvement_pct": 72.4006694076341,
+    "thermo_valid_pct": 99.52,
+    "coefficients": [
+      -173.94692738432323,
+      3129.762553585286,
+      360.9764619853022,
+      -3773.869267692959
+    ],
+    "residual_explained_pct": 3.6788065205048515,
+    "modern_correction_coeffs": [
+      -413.34940394622896,
+      32.39492677147589,
+      -81.32504622910179
+    ]
+  },
+  "domain2_plasma": {
+    "spitzer_mse": 1.1319191582425574,
+    "ours_mse": 1.1386047781711717,
+    "improvement_pct": -0.5906446480678396
+  },
+  "domain3_relativity": {
+    "c0_rest_energy": 1.000000455058246,
+    "c1_kinetic": 0.49976343120921185,
+    "c2_relativistic": 0.39262602563570026,
+    "pade_a": 1.0,
+    "pade_c": 1.0,
+    "pade_mse": 0.0,
+    "pade_r2": 1.0
+  },
+  "domain4_quantum": [
+    {
+      "name": "Anharmonic Oscillator",
+      "mse": 7.295745897754021e-09,
+      "r2": 0.9999999989267976,
+      "coeffs": [
+        1.7624333956028964e-05,
+        -2.8092865913287642e-05,
+        0.4999641499821274,
+        0.10000888131514987,
+        0.05000699391484723
+      ]
+    },
+    {
+      "name": "Double-Well Potential",
+      "mse": 1.999917320797579e-09,
+      "r2": 0.9999999991743412,
+      "coeffs": [
+        3.9999810654033,
+        -8.444052460829502e-13,
+        -1.9999703724981845,
+        6.542526712296565e-14,
+        0.24999481750461428
+      ]
+    },
+    {
+      "name": "Asymmetric Quartic",
+      "mse": 1.4935274619074609e-09,
+      "r2": 0.9999999995869567,
+      "coeffs": [
+        8.51331510799892e-06,
+        -0.05001855463914061,
+        0.29998347436837614,
+        0.15000510799912792,
+        0.020003074232147727
+      ]
+    }
+  ],
+  "domain5_ode": [
+    {
+      "name": "Van der Pol (\u03bc=1000)",
+      "stiffness": "~10\u00b3",
+      "rk4_status": "DIVERGED",
+      "ours_status": "OK",
+      "ours_mse": 3.180268855952871,
+      "verdict": "OURS SAVES"
+    },
+    {
+      "name": "Van der Pol (\u03bc=10000)",
+      "stiffness": "~10\u2074",
+      "rk4_status": "DIVERGED",
+      "ours_status": "OK",
+      "ours_mse": 0.0007598318416271884,
+      "verdict": "OURS SAVES"
+    },
+    {
+      "name": "Robertson Chemical Kinetics",
+      "stiffness": "~10\u2078",
+      "rk4_status": "DIVERGED",
+      "ours_status": "OK",
+      "ours_mse": 0.0019568524281392773,
+      "verdict": "OURS SAVES"
+    },
+    {
+      "name": "Brusselator (A=1, B=3)",
+      "stiffness": "~10\u00b2",
+      "rk4_status": "OK",
+      "ours_status": "OK",
+      "ours_mse": 3.1207524122145596e-10,
+      "verdict": "OK"
+    },
+    {
+      "name": "Stiff Linear (\u03bb=-1000)",
+      "stiffness": "~10\u00b3",
+      "rk4_status": "DIVERGED",
+      "ours_status": "OK",
+      "ours_mse": 3.1409597055156677,
+      "verdict": "OURS SAVES"
+    }
+  ]
+}

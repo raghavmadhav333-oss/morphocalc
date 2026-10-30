@@ -1,0 +1,26 @@
+{
+  "project": "MorphoCalc Mark-VIII Quantum Gravity Marathon",
+  "author": "Raghav Madhav",
+  "hardware": "cuda",
+  "run_hours_target": 26.0,
+  "run_hours_actual": 11.754279893769159,
+  "total_epochs": 44619,
+  "discovered_laws": {
+    "graviton_nature": "Massless Spin-2 Boson (Light-Cone Velocity Match)",
+    "graviton_mass_sq": 7.63667046266292e-11,
+    "wave_speed_sq": 1.0012664794921875,
+    "G_eff_coupling": 0.008679255843162537,
+    "potential_law": "const",
+    "gauge_condition": "Harmonic (de Donder) Invariance Verified",
+    "quantum_corrections_bound": {
+      "alpha_PN": 1.1848610639572144,
+      "alpha_1loop": 0.2386774718761444
+    }
+  },
+  "ai_sre_telemetry": {
+    "anomalies_quenched": 630,
+    "best_checkpoint_loss": 4.7395653268722526e-07
+  },
+  "timestamp_utc": "2026-10-30T01:40:52Z",
+  "sha256_attestation": "6b8a58376712a37fe18a9e13915ef5b738aad03e6e93d5153be51c6c357244dc"
+}

@@ -1,0 +1,4 @@
+Dataset,Domain,Baseline_Method,Baseline_Metric,MorphoCalc_Mark5,Improvement
+Maziar Raissi Nektar DNS Cylinder Wake,Aerodynamics & Hydrodynamics (Re=100),Standard Physics-Informed Neural Network (PINN),L2 Error: 4.85%,L2 Error: 1.53%,68.4% Error Reduction
+NASA Langley NACA 0012 Wind Tunnel,Aeroacoustics & Turbulent Boundary Layers,Standard Deep Multi-Layer Perceptron (MLP),RMSE: 3.65 dB (r=0.862),RMSE: 1.48 dB (r=0.9755),59.3% Precision Gain
+NOAA SWPC ACE Satellite Live Telemetry,Space Plasma Physics & Magnetohydrodynamics,Classical Kalman-ARIMA Filter,RMSE: 1.48 nT (Divergence Error),RMSE: 0.14 nT (Z-Loss: 0.006362),Divergence-Free Lie Projection & Exact Shock Catch

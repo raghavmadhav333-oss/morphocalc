@@ -1,0 +1,184 @@
+[
+  {
+    "discovery_id": "DISC-02-TRANSONIC-POPE-SHOCK",
+    "discovery_name": "Curvature-Saturated Pope Anisotropic Stress Closure",
+    "symbolic_equation": "tau_pope = [ (u . grad)u ] / [ 1 + 0.048 ||S||^2 ] + 0.392 (S*Omega - Omega*S)",
+    "source_model": "MorphoCalc-Mark-VI Eureka",
+    "timestamp": "2026-10-29 13:14:22Z",
+    "ast_dimensional_valid": true,
+    "clifford_grade_valid": true,
+    "fuzzing_report": {
+      "fuzzing_samples": 100000,
+      "nan_inf_count": 0,
+      "pole_detected": "False",
+      "min_denominator": 1.0,
+      "max_gradient": 43008.93816393148,
+      "passed_fuzzing": true
+    },
+    "invariant_report": {
+      "thermodynamic_entropy_valid_pct": 99.85,
+      "lumley_realizability_valid_pct": 99.92,
+      "asymptotic_bounded": true,
+      "energy_conservation_drift": 8.4e-08,
+      "passed_invariants": true
+    },
+    "overall_status": "CERTIFIED_SOUND",
+    "sha256_fingerprint": "c8a5a4f44bc99d4c77c2bfc146237dd80eb66f9ea32475893370742fa10472b2"
+  },
+  {
+    "discovery_id": "DISC-03-PADE-TRANSONIC-ACTIVATION",
+    "discovery_name": "Rational Pad\u00e9 [2/2] Transonic Activation",
+    "symbolic_equation": "sigma_pade(x) = (0.5x + 0.1x^2) / (1.0 + 0.05x^2)",
+    "source_model": "MorphoCalc Rational Physics Core",
+    "timestamp": "2026-10-29 13:14:22Z",
+    "ast_dimensional_valid": true,
+    "clifford_grade_valid": true,
+    "fuzzing_report": {
+      "fuzzing_samples": 100000,
+      "nan_inf_count": 0,
+      "pole_detected": "False",
+      "min_denominator": 1.0,
+      "max_gradient": 47609.397065378726,
+      "passed_fuzzing": true
+    },
+    "invariant_report": {
+      "thermodynamic_entropy_valid_pct": 100.0,
+      "lumley_realizability_valid_pct": 100.0,
+      "asymptotic_bounded": true,
+      "energy_conservation_drift": 0.0,
+      "passed_invariants": true
+    },
+    "overall_status": "CERTIFIED_SOUND",
+    "sha256_fingerprint": "cde472b08f767b5f0a797024eec013151cd9035b4d45b18ae631c3d17e10f8f6"
+  },
+  {
+    "discovery_id": "DISC-05-STIFF-ODE-CURVATURE-INTEGRATOR",
+    "discovery_name": "Symplectic Quartic Curvature Integrator Denominator",
+    "symbolic_equation": "den(D) = 1.0 + 0.015 * D^3 * (1.0 + D), where D = ||k4 - 2k3 + k2||^2 / ||k1||^2",
+    "source_model": "MorphoCalc Adaptive Symplectic Engine",
+    "timestamp": "2026-10-29 13:14:22Z",
+    "ast_dimensional_valid": true,
+    "clifford_grade_valid": true,
+    "fuzzing_report": {
+      "fuzzing_samples": 100000,
+      "nan_inf_count": 0,
+      "pole_detected": "False",
+      "min_denominator": 1.0,
+      "max_gradient": 2063177287562.3594,
+      "passed_fuzzing": true
+    },
+    "invariant_report": {
+      "thermodynamic_entropy_valid_pct": 100.0,
+      "lumley_realizability_valid_pct": 100.0,
+      "asymptotic_bounded": true,
+      "energy_conservation_drift": 3.1e-08,
+      "passed_invariants": true
+    },
+    "overall_status": "CERTIFIED_SOUND",
+    "sha256_fingerprint": "fb0428d17d6fb6fac4f88b47016614b7967ec14f45088e91fc00ebbbde6c6040"
+  },
+  {
+    "discovery_id": "DISC-01A-RAW-WAKE-CANDIDATE",
+    "discovery_name": "Raw Unprojected Cylinder Wake Closure (Pre-Firewall)",
+    "symbolic_equation": "tau_12 = c1*Delta^2*|S|*S_12 + c2*Delta^2*Omega_12*(du/dx) + c3*Delta^2*S_12 + c4*Delta^2*S_12*(du/dx)",
+    "source_model": "Raw Neural Polynomial Regressor",
+    "timestamp": "2026-10-29 13:14:22Z",
+    "ast_dimensional_valid": true,
+    "clifford_grade_valid": true,
+    "fuzzing_report": {
+      "fuzzing_samples": 100000,
+      "nan_inf_count": 0,
+      "pole_detected": "False",
+      "min_denominator": 1.0,
+      "max_gradient": 0.0,
+      "passed_fuzzing": true
+    },
+    "invariant_report": {
+      "thermodynamic_entropy_valid_pct": 49.5,
+      "lumley_realizability_valid_pct": 42.0,
+      "asymptotic_bounded": true,
+      "energy_conservation_drift": 1.42e-07,
+      "passed_invariants": false
+    },
+    "overall_status": "QUARANTINED",
+    "sha256_fingerprint": "b242ade87c2aebfc71b981c3d570f666b738bca54df16ca9f7839d9132339f14"
+  },
+  {
+    "discovery_id": "DISC-01B-PROJECTED-WAKE-CLOSURE",
+    "discovery_name": "Thermodynamically Filtered Lie-Poisson Wake Closure",
+    "symbolic_equation": "tau_12_proj = LiePoissonProject[ tau_12(S, Omega, grad_u) ]  (99.52% Dissipative Cone)",
+    "source_model": "MorphoCalc Thermodynamic Filter Core",
+    "timestamp": "2026-10-29 13:14:22Z",
+    "ast_dimensional_valid": true,
+    "clifford_grade_valid": true,
+    "fuzzing_report": {
+      "fuzzing_samples": 100000,
+      "nan_inf_count": 0,
+      "pole_detected": "False",
+      "min_denominator": 1.0,
+      "max_gradient": 0.0,
+      "passed_fuzzing": true
+    },
+    "invariant_report": {
+      "thermodynamic_entropy_valid_pct": 99.52,
+      "lumley_realizability_valid_pct": 99.8,
+      "asymptotic_bounded": true,
+      "energy_conservation_drift": 1.42e-07,
+      "passed_invariants": true
+    },
+    "overall_status": "CERTIFIED_SOUND",
+    "sha256_fingerprint": "1718998a99da18cb8c7d2cbdfd8d87eb5e858d0dddf10fee6b0061039c198ec8"
+  },
+  {
+    "discovery_id": "DISC-04-RELATIVISTIC-ENERGY-SERIES",
+    "discovery_name": "Relativistic Energy Series c0*mc^2 + c1*mv^2 + c2*mv^4/c^2",
+    "symbolic_equation": "E = 1.000000 mc^2 + 0.499763 m v^2 + 0.392626 m v^4/c^2",
+    "source_model": "MorphoCalc Relativity Head",
+    "timestamp": "2026-10-29 13:14:22Z",
+    "ast_dimensional_valid": true,
+    "clifford_grade_valid": true,
+    "fuzzing_report": {
+      "fuzzing_samples": 100000,
+      "nan_inf_count": 0,
+      "pole_detected": "False",
+      "min_denominator": 1.0,
+      "max_gradient": 0.0,
+      "passed_fuzzing": true
+    },
+    "invariant_report": {
+      "thermodynamic_entropy_valid_pct": 100.0,
+      "lumley_realizability_valid_pct": 100.0,
+      "asymptotic_bounded": true,
+      "energy_conservation_drift": 4.5e-07,
+      "passed_invariants": true
+    },
+    "overall_status": "CERTIFIED_SOUND",
+    "sha256_fingerprint": "d1f1c9d9704081253ba41473d06d8c917acc0f256405c03a9a162e6f74686e5b"
+  },
+  {
+    "discovery_id": "DISC-FAIL-ADVERSARIAL-PERPETUAL-MOTION",
+    "discovery_name": "Adversarial Hallucinated Antientropic Closure (Unphysical Test Target)",
+    "symbolic_equation": "tau_hallucinated = -999.0 * |S| * S_12 / (1.0 - 0.05 * ||S||^2)  [HAS SINGULARITY & NEGATIVE ENTROPY]",
+    "source_model": "Adversarial Red-Team Generator",
+    "timestamp": "2026-10-29 13:14:22Z",
+    "ast_dimensional_valid": true,
+    "clifford_grade_valid": false,
+    "fuzzing_report": {
+      "fuzzing_samples": 100000,
+      "nan_inf_count": 0,
+      "pole_detected": "True",
+      "min_denominator": 4.218375953923825e-05,
+      "max_gradient": 0.07561579296024057,
+      "passed_fuzzing": false
+    },
+    "invariant_report": {
+      "thermodynamic_entropy_valid_pct": 0.12,
+      "lumley_realizability_valid_pct": 0.0,
+      "asymptotic_bounded": false,
+      "energy_conservation_drift": 990.0,
+      "passed_invariants": false
+    },
+    "overall_status": "QUARANTINED",
+    "sha256_fingerprint": "4a079c3996588a0ebd2e29180176e339ca5b81ad02a1a6863e577b7eaca626fd"
+  }
+]

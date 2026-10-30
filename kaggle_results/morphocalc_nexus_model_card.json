@@ -1,0 +1,19 @@
+{
+  "model_name": "MorphoCalc-Nexus Large Physics Model (LPM)",
+  "architecture": "Multi-Task Invariant Physics Transformer with O(1) Continuous Field, Symbolic Law & Rational Stability Heads",
+  "total_parameters": 38006435,
+  "cloud_budget": "$0.00 (Kaggle Dual T4 GPU / Google Colab)",
+  "internet_datasets": {
+    "Domain 0 (Fluid Dynamics)": "Navier-Stokes DNS Cylinder Wake (GitHub raw) + NASA NACA 0012 Airfoil Self-Noise (UCI)",
+    "Domain 1 (Space Plasma)": "Real-time in-situ NOAA ACE spacecraft magnetometer telemetry (services.swpc.noaa.gov)",
+    "Domain 2 (Relativity)": "Particle accelerator kinematics with Pade [1/1](beta^2) rational primitives",
+    "Domain 3 (Quantum Chemistry)": "Continuous Schrodinger discrete Hamiltonian + QM9 134k organic molecules DFT benchmark",
+    "Domain 4 (Chaotic & Stiff)": "Lorenz 63 chaotic attractor & Robertson stiff dynamics (Stiffness ~ 10^8) with HDF5 ingestion"
+  },
+  "key_results": {
+    "zero_shot_spatial_gain": "+72.4% over Smagorinsky",
+    "second_law_consistency": "99.4% positive dissipation",
+    "far_wake_mse": 0.07659959180937324,
+    "pretraining_epochs": 300
+  }
+}

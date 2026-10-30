@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS artifacts
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Large checkpoint files (>50MB) - exclude massive binary models from git push
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.h5
+*.onnx
+
+# Allow the compact 1.36 MB Mark-8 Quantum Gravity Checkpoint
+!**/qgde_best_marathon_checkpoint.pt
+!qgde_best_marathon_checkpoint.pt
+
+# Large zip archives (>5MB)
+*.zip
+!morphocalc_mark8_quantum_gravity_results.zip

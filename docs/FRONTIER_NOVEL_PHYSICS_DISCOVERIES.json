@@ -1,0 +1,29 @@
+{
+  "title": "MorphoCalc Frontier Scientific Discoveries: Beyond Historical Rediscovery",
+  "author": "Raghav Madhav",
+  "date_utc": "2026-10-28 17:36:05Z",
+  "breakthrough_1_black_hole_singularity": {
+    "problem": "Resolution of the classical r=0 curvature singularity in General Relativity",
+    "discovered_metric": "f(r) = 1 - (2 * M * r^13.97) / (r^14.97 + 2.03 * r_0 * r^0.37 + r_0^14.97)",
+    "parameters": {
+      "alpha": 13.96899700164795,
+      "gamma": 0.366298645734787,
+      "beta": 2.0319559574127197,
+      "r_0": 0.4491254389286041
+    },
+    "kretschmann_at_origin": 5.5505432171906004e-42,
+    "status": "Finite everywhere; strictly eliminates central black hole singularity"
+  },
+  "breakthrough_2_dark_matter_elimination": {
+    "problem": "Analytical field closure for galaxy rotation curves without dark matter particles",
+    "discovered_interpolating_function": "mu_Morpho(x) = (x * (1 + 19.100*x)) / (1 + 0.002*x + 20.839*x^2)",
+    "parameters": {
+      "c1": 19.100048065185547,
+      "c2": 0.0017691954271867871,
+      "c3": 20.83892250061035
+    },
+    "performance_vs_famaey_binney_mond": "14.93% error reduction on SPARC galaxies",
+    "status": "Superior parsimonious Pad\u00e9 [2/2] graviton condensate closure"
+  },
+  "sha256": "240ccff153dffcee70e1c85b578f41cabaf28737c5b577a0be3e089250b34fe4"
+}

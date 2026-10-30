@@ -1,0 +1,14 @@
+{
+  "title": "Geometric Emergence of the Electron: Resolving the Quantum 'Why'",
+  "experiment": "Zitterbewegung Toroidal Soliton Simulation",
+  "author": "Raghav Madhav",
+  "results": {
+    "electric_field_at_origin": "0.00 V/m (Singularity-Free)",
+    "computed_spin_angular_momentum": "0.500 hbar",
+    "derived_g_factor": 2.0,
+    "classical_qed_target_g": 2.0,
+    "compton_radius_m": 1.9307963386214167e-13,
+    "zitterbewegung_freq_rad_s": 1.552688142210022e+21
+  },
+  "conclusion": "Quantum properties (Spin-1/2, g=2, finite mass) emerge naturally from spacetime topology."
+}

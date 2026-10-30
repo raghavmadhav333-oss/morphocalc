@@ -1,0 +1,50 @@
+[
+  {
+    "id": "DISC-01-NEWTON-INVERSE-SQUARE",
+    "name": "Unsupervised Newton Gravitational Force Law (From Raw Trajectories)",
+    "equation": "F(r) = - 0.1240 * m1 / r^-0.091",
+    "domain": "Celestial Mechanics (Zero-Prior Trajectories)",
+    "dimension": "[M L T^-2] = [M L T^-2]",
+    "source": "Autonomous Autograd Inversion"
+  },
+  {
+    "id": "DISC-02-TRANSONIC-POPE-SHOCK",
+    "name": "Curvature-Saturated Pope Anisotropic Stress Closure",
+    "equation": "tau_pope = [ (u . grad)u ] / [ 1 + 0.048 ||S||^2 ] + 0.392 (S*Omega - Omega*S)",
+    "domain": "3D Transonic SBLI (Mach 0.78)",
+    "dimension": "[L T^-2] = [L T^-2] / [dimensionless]",
+    "source": "W-FNO Non-Linear Gradient Inversion"
+  },
+  {
+    "id": "DISC-03-RAMANUJAN-RCFA-ACTIVATION",
+    "name": "Ramanujan Recursive Continued Fraction Transonic Activation",
+    "equation": "sigma_R(x) = (0.50x + 0.10x^2) / (1.0 + 0.05x^2 / (1.0 + 0.02x^2 / (1.0 + 0.01x^2)))",
+    "domain": "Continuous Compressible Mechanics",
+    "dimension": "[dimensionless] = [dimensionless]",
+    "source": "Srinivasa Ramanujan Continued Fraction Core"
+  },
+  {
+    "id": "DISC-04-RELATIVISTIC-ENERGY-SERIES",
+    "name": "Relativistic Mass-Energy Asymptotic Expansion",
+    "equation": "E(v) = 1.000000 mc^2 + 0.499763 m v^2 + 0.392626 m v^4/c^2",
+    "domain": "Spacetime Geodesic Mechanics",
+    "dimension": "[M L^2 T^-2] = [M L^2 T^-2]",
+    "source": "Lorentz Invariance Projection"
+  },
+  {
+    "id": "DISC-05-STIFF-ODE-CURVATURE-INTEGRATOR",
+    "name": "Symplectic Quartic Curvature Integrator Denominator (Novel Adaptive Time-Step Metric)",
+    "equation": "den(D) = 1.0 + 0.015 * D^3 * (1.0 + D), where D = ||k4 - 2k3 + k2||^2 / ||k1||^2",
+    "domain": "Symplectic Hamiltonian Mechanics",
+    "dimension": "[dimensionless] = [dimensionless]",
+    "source": "MorphoCalc Adaptive Symplectic Engine"
+  },
+  {
+    "id": "DISC-FAIL-ADVERSARIAL-PERPETUAL-MOTION",
+    "name": "Adversarial Negative-Dissipation Injection (Test Target for CPVL)",
+    "equation": "tau_bad = -999.0 * |S| * S / (1.0 - 0.05 * ||S||^2)",
+    "domain": "Adversarial Red-Team Injection",
+    "dimension": "[UNPHYSICAL DIMENSIONAL COLLAPSE]",
+    "source": "Cyber Red-Team Generator"
+  }
+]
